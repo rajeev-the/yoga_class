@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yoga Classes in South Delhi | Yoga Inner Power by Shikha Arya</title>
+  <meta name="description" content="South Delhi's leading classical and therapeutic yoga sanctuary led by Dr. Shikha Arya. Hatha, Vinyasa, Kundalini, and private home yoga sessions across Hauz Khas, GK, Defence Colony, and Vasant Kunj.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" href="assets/Yoga_Inner_Power_logo-Transparent-B.png">
+</head>
+<body>
+
+  <!-- ========================================================================
+       Sticky Sanctuary Header
+       ======================================================================== -->
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <!-- Logo Only Branding -->
+      <a href="#hero" class="brand-logo-only" aria-label="Yoga Inner Power">
+        <img src="assets/Yoga_Inner_Power_logo-Transparent-B.png" alt="Yoga Inner Power" class="brand-logo-img">
+      </a>
+
+      <!-- Clean Editorial Navigation -->
+      <nav class="nav-container">
+        <ul class="nav-desktop">
+          <li class="nav-item">
+            <a href="#hero" class="nav-link active">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#lineage" class="nav-link">About</a>
+          </li>
+          <li class="nav-item has-dropdown">
+            <a href="#styles" class="nav-link">
+              Yoga Practice
+              <svg class="dropdown-caret" viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="nav-dropdown">
+              <li><a href="#styles" class="dropdown-link" onclick="filterStyle('hatha')">Hatha Yoga</a></li>
+              <li><a href="#styles" class="dropdown-link" onclick="filterStyle('vinyasa')">Vinyasa Flow</a></li>
+              <li><a href="#styles" class="dropdown-link" onclick="filterStyle('ashtanga')">Ashtanga Yoga</a></li>
+              <li><a href="#styles" class="dropdown-link" onclick="filterStyle('kundalini')">Kundalini Yoga</a></li>
+              <li><a href="#styles" class="dropdown-link" onclick="filterStyle('yin')">Yin Yoga</a></li>
+              <li><a href="#chakras" class="dropdown-link">7 Chakras & Kundalini</a></li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a href="#chakras" class="nav-link">Holistic Health</a>
+          </li>
+          <li class="nav-item">
+            <a href="#private-home" class="nav-link">Private Sessions</a>
+          </li>
+          <li class="nav-item">
+            <a href="#schedule" class="nav-link">Courses</a>
+          </li>
+          <li class="nav-item">
+            <a href="#footer-contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="chime-btn" id="chime-btn" title="Harmonize with 432Hz Tibetan Singing Bowl Chime">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/>
+          </svg>
+          <span class="chime-label">432Hz Chime</span>
+        </button>
+
+        <a href="#schedule" class="btn-primary open-booking-trigger header-cta-desktop">
+          Choose Program
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="5" y1="12" x2="19" y2="12"></line>
+            <polyline points="12 5 19 12 12 19"></polyline>
+          </svg>
+        </a>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button class="mobile-toggle-btn" id="mobile-toggle-btn" aria-label="Open mobile menu" aria-expanded="false">
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+          <span class="hamburger-bar"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Responsive Full-Feature Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobile-nav-drawer" aria-hidden="true">
+    <div class="mobile-nav-backdrop" id="mobile-nav-backdrop"></div>
+    <div class="mobile-nav-panel">
+      <div class="mobile-nav-head">
+        <a href="#hero" class="mobile-nav-brand">
+          <img src="assets/Yoga_Inner_Power_logo-Transparent-B.png" alt="Yoga Inner Power" class="mobile-nav-logo">
+        </a>
+        <button class="mobile-nav-close-btn" id="mobile-nav-close-btn" aria-label="Close menu">&times;</button>
+      </div>
+
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link">Home</a></li>
+        <li><a href="#lineage" class="mobile-nav-link">About Dr. Shikha Arya</a></li>
+        <li class="mobile-accordion-item">
+          <button class="mobile-accordion-toggle" id="mobile-accordion-toggle">
+            <span>Yoga Practice Styles</span>
+            <svg class="accordion-caret" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"></polyline></svg>
+          </button>
+          <div class="mobile-accordion-content" id="mobile-accordion-content">
+            <a href="#styles" class="mobile-subnav-link" onclick="filterStyle('hatha')">Hatha Yoga</a>
+            <a href="#styles" class="mobile-subnav-link" onclick="filterStyle('vinyasa')">Vinyasa Flow</a>
+            <a href="#styles" class="mobile-subnav-link" onclick="filterStyle('ashtanga')">Ashtanga Yoga</a>
+            <a href="#styles" class="mobile-subnav-link" onclick="filterStyle('kundalini')">Kundalini Yoga</a>
+            <a href="#styles" class="mobile-subnav-link" onclick="filterStyle('yin')">Yin Yoga</a>
+          </div>
+        </li>
+        <li><a href="#chakras" class="mobile-nav-link">Harmonize Chakras & Kundalini</a></li>
+        <li><a href="#private-home" class="mobile-nav-link">Private Home Sessions</a></li>
+        <li><a href="#schedule" class="mobile-nav-link">Weekly Schedule & Courses</a></li>
+        <li><a href="#gallery" class="mobile-nav-link">Studio Sanctuary Gallery</a></li>
+        <li><a href="#footer-contact" class="mobile-nav-link">Contact & Location</a></li>
+      </ul>
+
+      <div class="mobile-nav-footer">
+        <a href="#schedule" class="btn-primary open-booking-trigger" style="width: 100%; justify-content: center;">
+          Choose Program
+        </a>
+        <a href="https://wa.me/919660216537?text=Namaste%20Dr.%20Shikha%20Arya,%20I%20would%20like%20to%20inquire%20about%20yoga%20classes." class="btn-secondary" style="width: 100%; justify-content: center; margin-top: 0.65rem;" target="_blank" rel="noopener noreferrer">
+          Chat on WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating WhatsApp Quick Connect (As in Reference) -->
+  <a href="https://wa.me/919660216537?text=Namaste%20Dr.%20Shikha%20Arya,%20I%20would%20like%20to%20inquire%20about%20yoga%20classes%20in%20South%20Delhi." 
+     class="whatsapp-float-btn" target="_blank" rel="noopener noreferrer" title="Chat on WhatsApp">
+    <svg viewBox="0 0 24 24">
+      <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+    </svg>
+  </a>
+
+  <!-- ========================================================================
+       Hero Section — Editorial Asymmetric Composition
+       ======================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+      <div class="hero-content">
+        <div class="transformation-eyebrow">
+          <span>Your Transformation</span>
+          <div class="eyebrow-line"></div>
+        </div>
+        
+        <h1 class="hero-title">
+          Heal. Empower. Transform. Flourish<br>
+          <span class="italic">Awaken Strength</span>
+        </h1>
+        <p class="hero-desc">
+          This is your path. We begin by healing the body and calming the mind, creating a foundation of well-being. From this place of strength, we empower you with knowledge and self-awareness. This empowerment ignites a profound personal transformation, unlocking the potential within. The final result is a life where you don’t just survive—you truly flourish.
+        </p>
+
+        <div class="hero-cta-group">
+          <a href="#schedule" class="btn-primary open-booking-trigger">
+            Choose Program
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="5" y1="12" x2="19" y2="12"></line>
+              <polyline points="12 5 19 12 12 19"></polyline>
+            </svg>
+          </a>
+          <a href="#private-home" class="btn-secondary">
+            Private Home Sessions
+          </a>
+        </div>
+
+        <div class="hero-badges-strip">
+          <div class="stat-item">
+            <span class="stat-value">6.8k<sup>+</sup></span>
+            <span class="stat-label">Happy Clients</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">98<sup>+</sup></span>
+            <span class="stat-label">Award Winning</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">99<sup>%</sup></span>
+            <span class="stat-label">Quality Programs</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="hero-visual-stack">
+          <!-- Clean Unobstructed Class Poster -->
+          <div class="hero-main-card">
+            <img src="assets/WhatsApp-Image-2025-10-04-at-3.55.10-PM.jpeg" alt="Yoga Classes with Dr. Shikha Arya" class="hero-img-main">
+            <div class="hero-seal-badge">
+              <span>YIP</span>
+              <span>Delhi</span>
+            </div>
+          </div>
+
+          <!-- Dedicated Non-Overlapping Verified Review Card -->
+          <div class="hero-review-companion-card">
+            <div class="review-stars-row">
+              <span class="stars-gold">★★★★★</span>
+              <span class="verified-tag">Verified Member Review</span>
+            </div>
+            <p class="review-companion-quote">
+              “After years of back pain from my desk job, Dr. Shikha's anatomical sequences were revolutionary. I feel stronger, pain-free, and aligned.”
+            </p>
+            <div class="review-companion-author">
+              <div class="author-avatar-chip">PM</div>
+              <div>
+                <h5 class="author-name-text">Priya Mehta</h5>
+                <span class="author-role-sub">Software Developer • South Delhi</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Interactive Breathwork Sanctuary Bar (Pranayama Vibe)
+       ======================================================================== -->
+  <section class="breath-sanctuary-bar">
+    <div class="container">
+      <div class="breath-widget">
+        <div class="breath-intro">
+          <span class="sanskrit-sub">प्राणायाम — Pranayama Pause</span>
+          <h4>Center Your Nervous System</h4>
+          <p>Take one minute of conscious breath before exploring. Align your heartbeat with serene rhythm.</p>
+        </div>
+
+        <div class="breath-circle-container">
+          <div class="breath-circle" id="breath-circle">
+            <span class="breath-phase-text" id="breath-phase">Breathe</span>
+            <span class="breath-seconds" id="breath-seconds">4s</span>
+          </div>
+        </div>
+
+        <div class="breath-controls">
+          <button class="breath-toggle-btn" id="breath-toggle">Begin Practice</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Chakra Energy Sanctuary & Interactive Kundalini Animation
+       ======================================================================== -->
+  <section class="chakras-section" id="chakras">
+    <div class="container">
+      <div class="section-head" style="margin-bottom: 2rem;">
+        <span class="sanskrit-sub">सप्त चक्र ध्यान — Seven Sacred Energy Centers</span>
+        <h2 class="section-title">Harmonize Your Chakras & Awaken Kundalini</h2>
+        <p class="section-desc">
+          Tap any chakra along the spine to awaken its healing Solfeggio sound and restore inner balance.
+        </p>
+      </div>
+
+      <div class="chakra-interactive-container">
+        <!-- Visual Yogi Energy Stage -->
+        <div class="chakra-visual-stage">
+          <div class="yogi-silhouette-wrapper">
+            <!-- Background Rotating Sacred Geometry Mandala -->
+            <svg class="mandala-backdrop-svg" viewBox="0 0 500 500" fill="none">
+              <g class="rotating-mandala-group">
+                <circle cx="250" cy="250" r="230" stroke="rgba(197, 164, 109, 0.2)" stroke-width="1.2" stroke-dasharray="6 8"/>
+                <circle cx="250" cy="250" r="180" stroke="rgba(184, 121, 91, 0.25)" stroke-width="1.5"/>
+                <circle cx="250" cy="250" r="120" stroke="rgba(52, 68, 56, 0.2)" stroke-dasharray="4 6"/>
+                <circle cx="250" cy="250" r="60" stroke="rgba(197, 164, 109, 0.3)"/>
+                <!-- Geometric Rays -->
+                <line x1="250" y1="20" x2="250" y2="480" stroke="rgba(197, 164, 109, 0.15)"/>
+                <line x1="20" y1="250" x2="480" y2="250" stroke="rgba(197, 164, 109, 0.15)"/>
+                <line x1="87" y1="87" x2="413" y2="413" stroke="rgba(197, 164, 109, 0.15)"/>
+                <line x1="87" y1="413" x2="413" y2="87" stroke="rgba(197, 164, 109, 0.15)"/>
+              </g>
+            </svg>
+
+            <!-- Meditating Yogi Figure SVG -->
+            <svg class="yogi-silhouette-svg" viewBox="0 0 500 620" fill="none">
+              <!-- Radiant Aura Glow Behind Yogi -->
+              <ellipse cx="250" cy="330" rx="200" ry="240" fill="url(#subtle-prana-glow)" opacity="0.45"/>
+
+              <!-- Yogi Silhouette -->
+              <path class="yogi-body-silhouette" d="
+                M250 82 C232 82 216 100 216 126 C216 150 232 168 250 168 C268 168 284 150 284 126 C284 100 268 82 250 82 Z
+                M236 172 C215 182 190 202 176 226 C155 262 144 314 139 368 C137 392 149 412 174 422 C194 430 214 422 219 402 C224 382 229 348 234 318 C238 298 242 272 245 252
+                L255 252 C258 272 262 298 266 318 C271 348 276 382 281 402 C286 422 306 430 326 422 C351 412 363 392 361 368 C356 314 345 262 324 226 C310 202 285 182 264 172 Z
+                M168 418 C138 433 88 463 78 498 C68 533 93 558 138 563 C198 568 238 543 250 533 C262 543 302 568 362 563 C407 558 432 533 422 498 C412 463 362 433 332 418
+                C285 442 215 442 168 418 Z" 
+                fill="#1e2e23"/>
+
+              <!-- Central Sushumna Nadi Energy Line -->
+              <line class="sushumna-nadi-line" x1="250" y1="88" x2="250" y2="522" stroke="rgba(255, 255, 255, 0.45)" stroke-width="2.5" stroke-dasharray="4 4"/>
+
+              <!-- Animated Kundalini Ascending Prana Particle -->
+              <circle id="kundalini-particle" cx="250" cy="516" r="5" fill="#f7b731">
+                <animate attributeName="opacity" values="0.4;1;0.4" dur="2s" repeatCount="indefinite"/>
+              </circle>
+
+              <defs>
+                <radialGradient id="subtle-prana-glow" cx="50%" cy="50%" r="50%">
+                  <stop offset="0%" stop-color="#b8795b" stop-opacity="0.5"/>
+                  <stop offset="50%" stop-color="#71806a" stop-opacity="0.25"/>
+                  <stop offset="100%" stop-color="transparent" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+            </svg>
+
+            <!-- 7 Center Chakra Discs (Centered on Spine) -->
+            <div class="chakra-node-btn active" data-chakra="crown" style="top: 72px; left: 50%;" title="Crown Chakra">
+              <div class="chakra-pulse-ring color-crown-pulse"></div>
+              <div class="chakra-disc color-crown">
+                <span class="chakra-bija-glyph">ॐ</span>
+              </div>
+            </div>
+
+            <div class="chakra-node-btn" data-chakra="thirdeye" style="top: 136px; left: 50%;" title="Third Eye Chakra">
+              <div class="chakra-pulse-ring color-thirdeye-pulse"></div>
+              <div class="chakra-disc color-thirdeye">
+                <span class="chakra-bija-glyph">ॐ</span>
+              </div>
+            </div>
+
+            <div class="chakra-node-btn" data-chakra="throat" style="top: 200px; left: 50%;" title="Throat Chakra">
+              <div class="chakra-pulse-ring color-throat-pulse"></div>
+              <div class="chakra-disc color-throat">
+                <span class="chakra-bija-glyph">हं</span>
+              </div>
+            </div>
+
+            <div class="chakra-node-btn" data-chakra="heart" style="top: 268px; left: 50%;" title="Heart Chakra">
+              <div class="chakra-pulse-ring color-heart-pulse"></div>
+              <div class="chakra-disc color-heart">
+                <span class="chakra-bija-glyph">यं</span>
+              </div>
+            </div>
+
+            <div class="chakra-node-btn" data-chakra="solar" style="top: 342px; left: 50%;" title="Solar Plexus Chakra">
+              <div class="chakra-pulse-ring color-solar-pulse"></div>
+              <div class="chakra-disc color-solar">
+                <span class="chakra-bija-glyph">रं</span>
+              </div>
+            </div>
+
+            <div class="chakra-node-btn" data-chakra="sacral" style="top: 422px; left: 50%;" title="Sacral Chakra">
+              <div class="chakra-pulse-ring color-sacral-pulse"></div>
+              <div class="chakra-disc color-sacral">
+                <span class="chakra-bija-glyph">वं</span>
+              </div>
+            </div>
+
+            <div class="chakra-node-btn" data-chakra="root" style="top: 502px; left: 50%;" title="Root Chakra">
+              <div class="chakra-pulse-ring color-root-pulse"></div>
+              <div class="chakra-disc color-root">
+                <span class="chakra-bija-glyph">लं</span>
+              </div>
+            </div>
+
+            <!-- Non-Overlapping Side Typography Callouts (Matching Classical Yogic Reference) -->
+            <!-- Right Labels -->
+            <div class="chakra-side-label label-right active" data-chakra="crown" style="top: 72px;">
+              <span class="callout-line"></span>
+              <div class="callout-text-box">
+                <span class="callout-text">Crown Chakra</span>
+                <span class="callout-sanskrit-tag">सहस्रार (Sahasrara)</span>
+              </div>
+            </div>
+            <div class="chakra-side-label label-right" data-chakra="throat" style="top: 200px;">
+              <span class="callout-line"></span>
+              <div class="callout-text-box">
+                <span class="callout-text">Throat Chakra</span>
+                <span class="callout-sanskrit-tag">विशुद्ध (Vishuddha)</span>
+              </div>
+            </div>
+            <div class="chakra-side-label label-right" data-chakra="solar" style="top: 342px;">
+              <span class="callout-line"></span>
+              <div class="callout-text-box">
+                <span class="callout-text">Solar Plexus Chakra</span>
+                <span class="callout-sanskrit-tag">मणिपूर (Manipura)</span>
+              </div>
+            </div>
+            <div class="chakra-side-label label-right" data-chakra="root" style="top: 502px;">
+              <span class="callout-line"></span>
+              <div class="callout-text-box">
+                <span class="callout-text">Root Chakra</span>
+                <span class="callout-sanskrit-tag">मूलाधार (Muladhara)</span>
+              </div>
+            </div>
+
+            <!-- Left Labels -->
+            <div class="chakra-side-label label-left" data-chakra="thirdeye" style="top: 136px;">
+              <div class="callout-text-box">
+                <span class="callout-text">Third Eye Chakra</span>
+                <span class="callout-sanskrit-tag">आज्ञा (Ajna)</span>
+              </div>
+              <span class="callout-line"></span>
+            </div>
+            <div class="chakra-side-label label-left" data-chakra="heart" style="top: 268px;">
+              <div class="callout-text-box">
+                <span class="callout-text">Heart Chakra</span>
+                <span class="callout-sanskrit-tag">अनाहत (Anahata)</span>
+              </div>
+              <span class="callout-line"></span>
+            </div>
+            <div class="chakra-side-label label-left" data-chakra="sacral" style="top: 422px;">
+              <div class="callout-text-box">
+                <span class="callout-text">Sacral Chakra</span>
+                <span class="callout-sanskrit-tag">स्वाधिष्ठान (Svadhisthana)</span>
+              </div>
+              <span class="callout-line"></span>
+            </div>
+          </div>
+
+          <!-- Bottom Activation Controls -->
+          <div class="chakra-controls-strip">
+            <button class="btn-kundalini-ascend" id="btn-kundalini-flow">
+              <span class="kundalini-flame-icon">🔥</span>
+              <span>Awaken Kundalini Flow (Ascending Wave)</span>
+            </button>
+            <div class="chakra-audio-tip">
+              ✦ Tap any chakra or the button above to hear Solfeggio harmonics
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Detailed Chakra Card -->
+        <div class="chakra-card-details-panel" id="chakra-card-panel">
+          <div class="chakra-card-compact-header">
+            <div class="chakra-header-main-col">
+              <!-- Top Bīja Mantra Tag & Level Pill -->
+              <div class="chakra-bija-pill-row">
+                <span class="chakra-bija-tag" style="background: rgba(155, 89, 182, 0.13); color: #9b59b6; border: 1.5px solid rgba(155, 89, 182, 0.4);">
+                  <span class="bija-glyph-tiny">ॐ</span>
+                  <span class="bija-sound-label">Bīja: <strong>ॐ (AUM)</strong></span>
+                </span>
+                <span class="chakra-level-pill">Center #7</span>
+              </div>
+
+              <!-- Prominent Title & High-Contrast Sanskrit -->
+              <div class="chakra-title-row">
+                <div class="chakra-glyph-circle" style="background: #9b59b6; box-shadow: 0 4px 14px rgba(155, 89, 182, 0.3);">
+                  ॐ
+                </div>
+                <div class="chakra-names-block">
+                  <h3 class="chakra-compact-name">Crown Chakra</h3>
+                  <div class="chakra-compact-sanskrit">
+                    <span class="sanskrit-native">सहस्रार</span>
+                    <span class="sanskrit-translit">(Sahasrara)</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="chakra-compact-freq" style="border-color: #9b59b6;">
+              <span class="freq-val" style="color: #9b59b6;">963 Hz</span>
+              <span class="freq-sub">Solfeggio Tone</span>
+            </div>
+          </div>
+
+          <div class="chakra-pills-row">
+            <span class="chakra-tag-item">📍 Crown of head / Fontanelle</span>
+            <span class="chakra-tag-item">🌿 Cosmic Thought & Pure Light</span>
+            <span class="chakra-tag-item">✨ Thousand-Petaled Lotus of Divine Unity</span>
+          </div>
+
+          <div class="chakra-compact-affirmation" style="border-left-color: #9b59b6;">
+            <div class="affirmation-badge-line" style="color: #9b59b6;">Affirmation:</div>
+            <p class="affirmation-quote">“I am connected to the infinite stillness, wisdom, and unity of the universe.”</p>
+          </div>
+
+          <div class="chakra-compact-focus">
+            <div class="focus-title">Yogic Focus & Alignment</div>
+            <p class="focus-text">The highest energetic vortex where individual awareness merges into universal peace. Harmonizing Sahasrara dissolves existential anxiety and brings deep meditative clarity.</p>
+            <div class="asana-line"><strong>Key Asanas:</strong> Silent Vipassana contemplation, Sirsasana (Headstand), Nadi Shodhana Pranayama.</div>
+          </div>
+
+          <div class="chakra-compact-actions">
+            <button class="btn-sound-frequency" onclick="playSolfeggioTone(963)">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"></polygon>
+                <path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"></path>
+              </svg>
+              Play 963Hz Harmonics
+            </button>
+
+            <button class="btn-primary" style="padding: 0.6rem 1.15rem; font-size: 0.8rem;" onclick="openBookingWithClass('Crown Chakra Alignment')">
+              Book Session
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Styles of Practice Section
+       ======================================================================== -->
+  <section class="styles-section" id="styles">
+    <div class="container">
+      <div class="section-head">
+        <span class="sanskrit-sub">योग साधना — Disciplines of the Mind & Body</span>
+        <h2 class="section-title">Five Pathways to Inner Transformation</h2>
+        <p class="section-desc">
+          Every body possesses unique anatomy, rhythm, and tension patterns. Choose the practice that resonates with your present journey.
+        </p>
+      </div>
+
+      <div class="style-filters">
+        <button class="style-filter-chip active" data-filter="all">All Disciplines</button>
+        <button class="style-filter-chip" data-filter="hatha">Hatha Yoga</button>
+        <button class="style-filter-chip" data-filter="vinyasa">Vinyasa Flow</button>
+        <button class="style-filter-chip" data-filter="ashtanga">Ashtanga Yoga</button>
+        <button class="style-filter-chip" data-filter="kundalini">Kundalini Yoga</button>
+        <button class="style-filter-chip" data-filter="yin">Yin & Restorative</button>
+      </div>
+
+      <div class="styles-grid">
+        <!-- Hatha Card -->
+        <div class="style-card" data-style="hatha">
+          <div class="style-card-image-wrap">
+            <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.40-PM-1-1024x768.jpeg" alt="Hatha Yoga Practice" class="style-card-img">
+            <span class="style-tag-pill">Foundational & Grounding</span>
+          </div>
+          <div class="style-card-body">
+            <h3 class="style-card-title">Classical Hatha Yoga</h3>
+            <span class="style-card-sutra">Balance of Ha (Sun) & Tha (Moon)</span>
+            <p class="style-card-desc">
+              Discover enduring strength and physical serenity through deliberate postures and breath retention. Aligns structural posture and restores spinal equilibrium.
+            </p>
+            <div class="style-meta-row">
+              <span>Duration: 75 Mins</span>
+              <a href="#schedule" class="style-book-link" onclick="openBookingWithClass('Classical Hatha Yoga')">Reserve →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Vinyasa Card -->
+        <div class="style-card" data-style="vinyasa">
+          <div class="style-card-image-wrap">
+            <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.39-PM-1-1024x768.jpeg" alt="Vinyasa Flow Session" class="style-card-img">
+            <span class="style-tag-pill">Fluid Breath & Agility</span>
+          </div>
+          <div class="style-card-body">
+            <h3 class="style-card-title">Vinyasa Flow</h3>
+            <span class="style-card-sutra">Breath Synchronized Movement</span>
+            <p class="style-card-desc">
+              Synchronize each inhale and exhale with a fluid sequence of asanas. Cultivates internal heat, cardiovascular stamina, cardiovascular lightness, and quiet presence.
+            </p>
+            <div class="style-meta-row">
+              <span>Duration: 60 Mins</span>
+              <a href="#schedule" class="style-book-link" onclick="openBookingWithClass('Vinyasa Flow')">Reserve →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ashtanga Card -->
+        <div class="style-card" data-style="ashtanga">
+          <div class="style-card-image-wrap">
+            <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.44-PM-768x1024.jpeg" alt="Ashtanga Yoga Practice" class="style-card-img">
+            <span class="style-tag-pill">Discipline & Vital Heat</span>
+          </div>
+          <div class="style-card-body">
+            <h3 class="style-card-title">Ashtanga Yoga</h3>
+            <span class="style-card-sutra">Eightfold Discipline of Purity</span>
+            <p class="style-card-desc">
+              A structured, rigorous sequence linked with Ujjayi breath and internal energetic locks (Bandhas). Builds focused concentration, muscle tone, and bodily purification.
+            </p>
+            <div class="style-meta-row">
+              <span>Duration: 75 Mins</span>
+              <a href="#schedule" class="style-book-link" onclick="openBookingWithClass('Ashtanga Yoga')">Reserve →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Kundalini Card -->
+        <div class="style-card" data-style="kundalini">
+          <div class="style-card-image-wrap">
+            <img src="assets/WhatsApp-Image-2025-10-09-at-12.55.00-PM-768x1024.jpeg" alt="Kundalini Meditation" class="style-card-img">
+            <span class="style-tag-pill">Awakening & Vitality</span>
+          </div>
+          <div class="style-card-body">
+            <h3 class="style-card-title">Kundalini Awakening</h3>
+            <span class="style-card-sutra">Elevating Latent Spiritual Energy</span>
+            <p class="style-card-desc">
+              Dynamic pranayama kriyas, sacred mantras, and focused mudras designed to elevate dormant spinal energy, soothe the adrenal glands, and awaken intuition.
+            </p>
+            <div class="style-meta-row">
+              <span>Duration: 75 Mins</span>
+              <a href="#schedule" class="style-book-link" onclick="openBookingWithClass('Kundalini Awakening')">Reserve →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Yin Card -->
+        <div class="style-card" data-style="yin">
+          <div class="style-card-image-wrap">
+            <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.48-PM-768x1024.jpeg" alt="Yin & Restorative Yoga" class="style-card-img">
+            <span class="style-tag-pill">Stillness & Deep Healing</span>
+          </div>
+          <div class="style-card-body">
+            <h3 class="style-card-title">Yin & Restorative</h3>
+            <span class="style-card-sutra">Deep Connective Tissue Surrender</span>
+            <p class="style-card-desc">
+              Unwind chronic tension through passive, floor-grounded postures held for 3 to 5 minutes. Gentle on joints, healing for back stiffness, and calming for overstimulated minds.
+            </p>
+            <div class="style-meta-row">
+              <span>Duration: 60 Mins</span>
+              <a href="#schedule" class="style-book-link" onclick="openBookingWithClass('Yin & Restorative')">Reserve →</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Holistic Therapy Card -->
+        <div class="style-card" data-style="hatha">
+          <div class="style-card-image-wrap">
+            <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.59-PM-1-1024x768.jpeg" alt="Therapeutic Yoga South Delhi" class="style-card-img">
+            <span class="style-tag-pill">Medical & Spine Therapy</span>
+          </div>
+          <div class="style-card-body">
+            <h3 class="style-card-title">Spinal & Posture Therapy</h3>
+            <span class="style-card-sutra">Anatomical Restoration</span>
+            <p class="style-card-desc">
+              Designed specifically for desk-bound professionals dealing with cervical discomfort, lumbar compression, and postural imbalance. Tailored with safe medical discernment.
+            </p>
+            <div class="style-meta-row">
+              <span>Duration: 60 Mins</span>
+              <a href="#schedule" class="style-book-link" onclick="openBookingWithClass('Spinal & Posture Therapy')">Reserve →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Botanical Divider -->
+  <div class="botanical-divider">
+    <span class="botanical-glyph">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C10.5 5 7 8 7 12C7 16 10 18 12 22C14 18 17 16 17 12C17 8 13.5 5 12 2Z"/>
+      </svg>
+    </span>
+  </div>
+
+  <!-- ========================================================================
+       Private Home Sessions Section (South Delhi Spotlight)
+       ======================================================================== -->
+  <section class="private-sessions-section" id="private-home">
+    <div class="container private-grid">
+      <div class="private-images-composition">
+        <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.59-PM-1-1024x768.jpeg" alt="Private Home Yoga Training in South Delhi" class="private-main-img">
+        <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.44-PM-768x1024.jpeg" alt="Personal Posture Adjustment" class="private-sub-img">
+      </div>
+
+      <div class="private-text-col">
+        <span class="sanskrit-sub">गृह योग साधना — Home Sanctuary Sessions</span>
+        <h2>Your Living Room, Transformed Into a Haven of Serenity</h2>
+        <p class="section-desc" style="margin-bottom: 1.5rem;">
+          Eliminate traffic, commute stress, and rigid gym timetables. Dr. Shikha Arya brings individualized yogic instruction and anatomical therapeutic guidance directly to your private home in South Delhi.
+        </p>
+
+        <ul class="benefit-list">
+          <li class="benefit-item">
+            <span class="benefit-icon">✦</span>
+            <div>
+              <strong>1-on-1 Customized Routine:</strong> Sequences curated precisely around your physical goals, flexibility baseline, and rehabilitation needs.
+            </div>
+          </li>
+          <li class="benefit-item">
+            <span class="benefit-icon">✦</span>
+            <div>
+              <strong>Tactile Alignment & Adjustments:</strong> Direct hands-on posture checks ensuring maximum therapeutic benefit without strain or injury.
+            </div>
+          </li>
+          <li class="benefit-item">
+            <span class="benefit-icon">✦</span>
+            <div>
+              <strong>Family & Couple Sessions:</strong> Private small-group sessions for family members seeking mindful wellness in shared domestic comfort.
+            </div>
+          </li>
+        </ul>
+
+        <div class="neighbourhoods-badge">
+          <span class="locality-chip">📍 Hauz Khas</span>
+          <span class="locality-chip">📍 Greater Kailash (GK I & II)</span>
+          <span class="locality-chip">📍 Defence Colony</span>
+          <span class="locality-chip">📍 Vasant Kunj</span>
+          <span class="locality-chip">📍 Panchsheel Park</span>
+          <span class="locality-chip">📍 Safdarjung Enclave</span>
+          <span class="locality-chip">📍 Saket & Green Park</span>
+        </div>
+
+        <button class="btn-primary open-booking-trigger">
+          Request In-Home Consultation
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Weekly Class Schedule & Live Mat Capacity (Dot Markers)
+       ======================================================================== -->
+  <section class="schedule-section" id="schedule">
+    <div class="container">
+      <div class="section-head">
+        <span class="sanskrit-sub">साप्ताहिक समय — Weekly Studio Timings</span>
+        <h2 class="section-title">Sanctuary Timetable & Mat Reservations</h2>
+        <p class="section-desc">
+          Intimate class sizes preserved to ensure personalized attention for every student. Select a day to reserve your practice mat.
+        </p>
+      </div>
+
+      <div class="schedule-days-bar">
+        <button class="day-pill active" data-day="mon">Monday</button>
+        <button class="day-pill" data-day="tue">Tuesday</button>
+        <button class="day-pill" data-day="wed">Wednesday</button>
+        <button class="day-pill" data-day="thu">Thursday</button>
+        <button class="day-pill" data-day="fri">Friday</button>
+        <button class="day-pill" data-day="sat">Saturday</button>
+        <button class="day-pill" data-day="sun">Sunday</button>
+      </div>
+
+      <div class="schedule-table-wrap">
+        <div id="schedule-table-body">
+          <!-- Populated dynamically via app.js -->
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Teacher Lineage & Master Bio — Dr. Shikha Arya
+       ======================================================================== -->
+  <section class="lineage-section" id="lineage">
+    <div class="container lineage-grid">
+      <div class="lineage-portrait-card">
+        <img src="assets/WhatsApp-Image-2025-10-04-at-3.55.10-PM.jpeg" alt="Dr. Shikha Arya - Founder & Master Yoga Acharya" class="lineage-portrait-img">
+        <div class="lineage-quote-ribbon">
+          <p>“Yoga is not about touching your toes; it is what you awaken within yourself on the path inward.”</p>
+        </div>
+      </div>
+
+      <div class="lineage-content">
+        <span class="sanskrit-sub">आचार्य — Master Guide</span>
+        <h2>Dr. Shikha Arya</h2>
+        <span class="lineage-role">Lead Master Yogini & Founder, Yoga Inner Power</span>
+        
+        <p class="lineage-bio">
+          With over a decade of devoted teaching across Delhi's most respected wellness hubs, Dr. Shikha Arya synthesizes classical Vedic lineage with anatomical precision. Her practice goes far beyond physical stretching—she approaches each student as an integrated ecosystem of mind, prana, and spine.
+        </p>
+
+        <p class="lineage-bio">
+          Whether guiding high-tempo corporate professionals through chronic lower back alleviation or leading spiritual practitioners in deep Kundalini breathwork, her classes are known for their profound quietude, clinical safety, and warm, compassionate presence.
+        </p>
+
+        <div class="lineage-credentials">
+          <div class="credential-item">
+            <span class="credential-icon">✦</span>
+            <div>
+              <div class="credential-title">Anatomy & Therapy Master</div>
+              <div class="credential-desc">Targeted healing for spine, joints & nerve health</div>
+            </div>
+          </div>
+          <div class="credential-item">
+            <span class="credential-icon">✦</span>
+            <div>
+              <div class="credential-title">Classical Vedic Tradition</div>
+              <div class="credential-desc">Certified Master of Patanjali Astanga & Hatha</div>
+            </div>
+          </div>
+          <div class="credential-item">
+            <span class="credential-icon">✦</span>
+            <div>
+              <div class="credential-title">Personalized Private Care</div>
+              <div class="credential-desc">10+ years private home training in South Delhi</div>
+            </div>
+          </div>
+          <div class="credential-item">
+            <span class="credential-icon">✦</span>
+            <div>
+              <div class="credential-title">Pranayama & Sound Therapy</div>
+              <div class="credential-desc">Conscious breathwork & singing bowl resonance</div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#schedule" class="btn-primary open-booking-trigger">
+          Connect With Shikha Arya
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Daily Sutra & Reflection Banner (Stitch Design Component)
+       ======================================================================== -->
+  <section class="sutra-banner-section">
+    <div class="container container-narrow">
+      <div class="sutra-banner-card">
+        <span class="sanskrit-sub">दैनिक विचार — Mindful Contemplation</span>
+        <blockquote class="sutra-text" id="rotating-sutra-text">
+          “Yoga is the journey of the self, through the self, to the self.”
+        </blockquote>
+        <div class="sutra-author" id="rotating-sutra-author">
+          — The Bhagavad Gita
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Words of Calm — Member Testimonials
+       ======================================================================== -->
+  <section class="testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-head">
+        <span class="sanskrit-sub">अनुभव — Voices of Transformation</span>
+        <h2 class="section-title">Reflections From Our Community</h2>
+        <p class="section-desc">
+          Honest stories of physical healing, mental silence, and restored strength from practitioners across South Delhi.
+        </p>
+      </div>
+
+      <div class="testimonial-cards">
+        <div class="testimonial-card">
+          <p class="testimonial-quote">
+            “I came to Shikha’s classes for basic flexibility, but discovered so much more. Her unique blend of anatomical insight and calming presence creates an authentic sanctuary. The stress of my executive life genuinely dissolves on the mat.”
+          </p>
+          <div class="testimonial-author-row">
+            <div class="author-avatar">AJ</div>
+            <div>
+              <div class="author-name">Anika Joshi</div>
+              <div class="author-role">Marketing Director, Greater Kailash</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-quote">
+            “After 6 years of debilitating lumbar pain from desk hours, I was skeptical of yoga. Shikha’s therapeutic sequence was revolutionary. She didn't just teach poses; she showed me how to align and heal my spine. Today I am completely pain-free.”
+          </p>
+          <div class="testimonial-author-row">
+            <div class="author-avatar">RM</div>
+            <div>
+              <div class="author-name">Rohit Mehra</div>
+              <div class="author-role">Architect, Hauz Khas Enclave</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-quote">
+            “Her private in-home sessions in Vasant Kunj have become the spiritual anchor of our family’s week. Shikha's patience with our posture adjustments and the gentle pranayama techniques have brought lasting calm into our home.”
+          </p>
+          <div class="testimonial-author-row">
+            <div class="author-avatar">SK</div>
+            <div>
+              <div class="author-name">Sunita & Kabir Kapoor</div>
+              <div class="author-role">Entrepreneurs, Vasant Kunj</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Editorial Sanctuary Gallery Showcase
+       ======================================================================== -->
+  <section class="gallery-section" id="gallery">
+    <div class="container">
+      <div class="section-head">
+        <span class="sanskrit-sub">झांकी — Studio Glimpses</span>
+        <h2 class="section-title">The Atmosphere of Calm</h2>
+        <p class="section-desc">
+          Sunlight, natural linen, organic terracotta, and mindful community in practice.
+        </p>
+      </div>
+
+      <div class="gallery-masonry">
+        <div class="gallery-item span-2">
+          <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.40-PM-1-1024x768.jpeg" alt="Yoga Inner Power Sanctuary Studio">
+          <div class="gallery-caption">
+            <span>South Delhi Studio Sanctuary — Peaceful Practice</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.44-PM-768x1024.jpeg" alt="Personal Hands-on Alignment">
+          <div class="gallery-caption">
+            <span>Mindful Structural Correction</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/WhatsApp-Image-2025-10-09-at-12.55.00-PM-768x1024.jpeg" alt="Morning Pranayama Stillness">
+          <div class="gallery-caption">
+            <span>Pranayama at Dawn</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.48-PM-768x1024.jpeg" alt="Focused Asana Concentration">
+          <div class="gallery-caption">
+            <span>Asana Concentration & Stilling</span>
+          </div>
+        </div>
+        <div class="gallery-item span-2">
+          <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.39-PM-1-1024x768.jpeg" alt="Group Flow Session">
+          <div class="gallery-caption">
+            <span>Community Yoga Flow & Harmony</span>
+          </div>
+        </div>
+        <div class="gallery-item">
+          <img src="assets/WhatsApp-Image-2025-10-09-at-12.54.59-PM-1-1024x768.jpeg" alt="Private Home Session Alignment">
+          <div class="gallery-caption">
+            <span>Home Session Guidance</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========================================================================
+       Sanctuary Booking Modal
+       ======================================================================== -->
+  <div class="modal-backdrop" id="booking-modal">
+    <div class="booking-modal">
+      <div class="modal-header">
+        <div>
+          <span class="sanskrit-sub" style="margin-bottom: 0.2rem; font-size: 0.95rem;">आरंभ — Reserve Practice</span>
+          <h3 style="font-size: 1.4rem;">Book Sanctuary Session</h3>
+        </div>
+        <button class="modal-close-btn close-modal-trigger" aria-label="Close modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="18" y1="6" x2="6" y2="18"></line>
+            <line x1="6" y1="6" x2="18" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <form id="booking-form">
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="book-name">Your Full Name</label>
+              <input type="text" id="book-name" class="form-control" placeholder="e.g. Priyanshu Sharma" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="book-phone">WhatsApp Contact</label>
+              <input type="tel" id="book-phone" class="form-control" placeholder="+91 98765 43210" required>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="book-email">Email Address</label>
+            <input type="email" id="book-email" class="form-control" placeholder="name@domain.com" required>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label class="form-label" for="book-type">Session Type</label>
+              <select id="book-type" class="form-control" required>
+                <option value="Studio Group Class">Studio Group Class (South Delhi)</option>
+                <option value="Private Home Session">Private In-Home Trainer (At Your Residence)</option>
+                <option value="Therapeutic Spinal Consultation">Therapeutic Spinal & Posture Care</option>
+                <option value="Weekend Workshop / Retreat">Weekend Workshop / Retreat</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="book-location">Your South Delhi Locality</label>
+              <select id="book-location" class="form-control" required>
+                <option value="Hauz Khas">Hauz Khas / Enclave</option>
+                <option value="Greater Kailash">Greater Kailash (GK I / II)</option>
+                <option value="Defence Colony">Defence Colony</option>
+                <option value="Vasant Kunj">Vasant Kunj</option>
+                <option value="Panchsheel Park">Panchsheel Park</option>
+                <option value="Safdarjung Enclave">Safdarjung Enclave</option>
+                <option value="Saket">Saket</option>
+                <option value="Green Park">Green Park</option>
+                <option value="Other">Other South Delhi Area</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="book-notes">Goals or Physical Conditions</label>
+            <textarea id="book-notes" class="form-control" rows="3" placeholder="e.g. Lower back tightness, looking for morning energy flow..."></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; padding: 0.95rem;">
+            Confirm Session Reservation
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-notice" id="toast-notice">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+      <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+      <polyline points="22 4 12 14.01 9 11.01"></polyline>
+    </svg>
+    <span class="toast-text">Session confirmed.</span>
+  </div>
+
+  <!-- ========================================================================
+       Editorial Sanctuary Footer
+       ======================================================================== -->
+  <footer class="site-footer" id="footer-contact">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="brand-wrapper" style="margin-bottom: 1.25rem;">
+            <img src="assets/Yoga_Inner_Power_logo-Transparent-B.png" alt="Yoga Inner Power Logo" class="brand-logo-img" style="filter: brightness(1.2);">
+            <div class="brand-text">
+              <span class="brand-title" style="color: var(--surface);">Yoga Inner Power</span>
+              <span class="brand-subtitle" style="color: var(--highlight-ochre);">Shikha Arya</span>
+            </div>
+          </div>
+          <p>
+            An authentic South Delhi sanctuary dedicated to classical yogic discipline, therapeutic anatomical alignment, and conscious breathwork.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Yoga Disciplines</h4>
+          <ul class="footer-links">
+            <li><a href="#styles" class="footer-link">Classical Hatha Yoga</a></li>
+            <li><a href="#styles" class="footer-link">Dynamic Vinyasa Flow</a></li>
+            <li><a href="#styles" class="footer-link">Ashtanga Primary Series</a></li>
+            <li><a href="#styles" class="footer-link">Kundalini Energy Awakening</a></li>
+            <li><a href="#styles" class="footer-link">Yin & Restorative Healing</a></li>
+            <li><a href="#styles" class="footer-link">Spinal Posture Therapy</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">South Delhi Areas</h4>
+          <ul class="footer-links">
+            <li><a href="#private-home" class="footer-link">Hauz Khas Enclave</a></li>
+            <li><a href="#private-home" class="footer-link">Greater Kailash (GK I & II)</a></li>
+            <li><a href="#private-home" class="footer-link">Defence Colony</a></li>
+            <li><a href="#private-home" class="footer-link">Vasant Kunj & Vasant Vihar</a></li>
+            <li><a href="#private-home" class="footer-link">Panchsheel & Saket</a></li>
+            <li><a href="#private-home" class="footer-link">Safdarjung & Green Park</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Sanctuary Inquiries</h4>
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+            <span>+91 96602 16537</span>
+          </div>
+
+          <div class="footer-contact-item">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+              <polyline points="22,6 12,13 2,6"/>
+            </svg>
+            <span>shikhaarya170@gmail.com</span>
+          </div>
+
+          <div class="footer-contact-item" style="align-items: flex-start;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="margin-top: 3px;">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+              <circle cx="12" cy="10" r="3"/>
+            </svg>
+            <span>South Delhi, New Delhi — 110016, India</span>
+          </div>
+
+          <div style="margin-top: 1.5rem;">
+            <button class="btn-secondary open-booking-trigger" style="color: var(--surface); border-color: var(--surface-dim); width: 100%; text-align: center;">
+              Schedule Consultation
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          © 2026 Yoga Inner Power by Dr. Shikha Arya. All rights reserved.
+        </div>
+        <div style="display: flex; gap: 1.5rem;">
+          <a href="#hero" class="footer-link">Top of Sanctuary ↑</a>
+          <a href="#private-home" class="footer-link">In-Home Yoga</a>
+          <a href="#schedule" class="footer-link">Schedule</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
